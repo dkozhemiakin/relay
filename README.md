@@ -1,4 +1,4 @@
-# Relay Assignment!
+# Relay Assignment
 
 ## Context 
 IoT devices send out continuous data which we want to collect (e.g thermostat, heart rate meter, car fuel readings, etc). 
@@ -23,7 +23,7 @@ The pipeline is container based.
 
 Docker compose builds containers, run them and organizes network among them.
 
-![alt text](diagram.png)
+![Architecture diagram](diagram.png)
 
 The pipeline contains 5 main sections.
 
@@ -117,7 +117,9 @@ Response format:
     avg_value: <avg>
 }
 ```
+# Demo
 
+[![Demo](https://img.youtube.com/vi/WgO-rIT4IpE/0.jpg)](https://www.youtube.com/watch?v=WgO-rIT4IpE)
 
 ## Known issues
 
