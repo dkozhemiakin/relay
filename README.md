@@ -61,12 +61,12 @@ You need this project downloaded and ```docker-compose``` installed to run the p
 
 ### Compilation
 
-The compilation is performed inside docker containers and doesn't require any java and maven installation. 
+The compilation is performed inside containers and doesn't require any java and maven on your machine. 
 The result of compilation is repacked into execution containers to make them free of source code and build applications. 
 
 ### Run
 
-You need to download the project and make its folder current.
+You need to download the project and set its folder as current.
 
 Command to run docker compose:
 
@@ -75,7 +75,7 @@ Command to run docker compose:
 ### Containers run order
 
 Cassandra starts comparably long and other services can start earlier than db becomes acessible.
-In this case ```consumer``` and ```api``` can fail their start-up.
+In this case ```consumer``` and ```api``` can fail their start-up. These containers have restart-on-failure option, so you just need to wait until they are restarted.
 
 ### Endpoints
 
@@ -123,5 +123,5 @@ Response format:
 
 ## Known issues
 
-- I was unable to configure uuid serialization for kafka and i had to replace it with string. But i bet it's possible
+- I was unable to configure uuid serialization for kafka and I had to replace it with string. But I bet it's possible.
 - There were some difficulties with some data retrieving from cassandra: uuid and not mapped custom queries. That tricky code should be replaced with proper configuration. 
