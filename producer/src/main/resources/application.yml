@@ -1,0 +1,12 @@
+device:
+  amount: 2
+  timeout: 1000
+
+kafka:
+  bootstrap-servers: localhost:9092
+  topic: mytopic
+
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO

@@ -1,0 +1,18 @@
+kafka:
+  bootstrap-servers: localhost:9092
+  topic: mytopic
+
+cassandra:
+  servers: localhost
+  port: 9042
+  keyspace: relay
+  migration:
+    keyspace-name: ${cassandra.keyspace}
+    script-location: cassandra/migration
+    strategy: IGNORE_DUPLICATES
+    consistency-level: LOCAL_QUORUM
+
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
