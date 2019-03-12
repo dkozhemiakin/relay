@@ -85,7 +85,7 @@ Instead of ```<url>``` you should use ```localhost```.
 In case you're running docker machine you can get your url with command ```docker-machine ip```.
 
 There are 2 endpoints provided by api service:
-- Global statistics
+#### Global statistics
 
 Call ```GET http://<url>:8080/statistics/```
 
@@ -96,7 +96,7 @@ Response format:
     total_count: XXX
 }
 ```
-- Device statistics
+#### Device statistics
 
 Call ```GET http://<url>:8080/statistics/<device-id>?from=<from>&to=<to>```
 
